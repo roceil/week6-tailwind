@@ -1,0 +1,8 @@
+.nav{
+    a{
+        &::before{
+            content: '123';
+            border-bottom: 1px solid black;
+        }
+    }
+}
