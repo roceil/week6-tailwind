@@ -1,0 +1,16 @@
+.nav{
+    li{
+        position: relative;
+        &:hover{
+            &::before{
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 5px;
+                top: 120%;
+                background: #62DB54;
+            }
+        }
+
+    }
+}
