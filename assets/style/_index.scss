@@ -21,7 +21,22 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+.home_teaching{
+    h2{
+        position: relative;
+        &::after{
+            content: " ";
+            position: absolute;
+            width: 50px;
+            height: 3px;
+            background-color: #62DB54;
+            top: 100%;
+            left: 0%;
+            transform: translate(0%,0%);
+            margin-top: 16px;
+        }
+    }
+}
 //768px解析度
 @media (max-width:768px) {
     .banner{
@@ -30,5 +45,13 @@
         background-position: center center ;
         background-repeat: no-repeat;
         background-size: cover;
+    }
+    .home_teaching{
+        h2{
+            &::after{
+                left: 50% ;
+                transform: translate(-50%,-50%);
+            }
+        }
     }
 }

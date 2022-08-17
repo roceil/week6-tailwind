@@ -35,6 +35,23 @@
   margin-top: 16px;
 }
 
+.process h2 {
+  position: relative;
+}
+.process h2::after {
+  content: " ";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background-color: #62DB54;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin-top: 16px;
+}
+
 @media (max-width: 768px) {
   .banner {
     background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/bg_home_mobile.jpg);
