@@ -646,6 +646,8 @@ select {
 
   .container {
     max-width: 1280px;
+    padding-right: 72px;
+    padding-left: 72px;
   }
 }
 @media (min-width: 1536px) {
@@ -746,6 +748,9 @@ select {
 }
 .hidden {
   display: none;
+}
+.h-screen {
+  height: 100vh;
 }
 .h-3 {
   height: 0.75rem;
@@ -875,10 +880,6 @@ select {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
 }
 .pl-12 {
   padding-left: 3rem;
@@ -1063,6 +1064,11 @@ body{
   .lg\:px-2 {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+  }
+
+  .lg\:px-1 {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
   }
 
   .lg\:text-left {
