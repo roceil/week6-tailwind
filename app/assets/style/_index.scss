@@ -37,6 +37,23 @@
         }
     }
 }
+.process{
+    h2{
+        position: relative;
+        &::after{
+            content: " ";
+            position: absolute;
+            width: 50px;
+            height: 3px;
+            background-color: #62DB54;
+            top: 100%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            margin-top: 16px;
+        }
+    }
+}
+
 //768px解析度
 @media (max-width:768px) {
     .banner{

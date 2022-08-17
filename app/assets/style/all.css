@@ -11,3 +11,14 @@ body{
 .Azeret_Mono{
     font-family: 'Azeret Mono', monospace;
 }
+::-webkit-scrollbar{
+    margin-top: 1px;
+}
+@layer components{
+    .btn{
+        @apply p-4 border border-white rounded-lg text-white text-base leading-normal block mr-4
+    }
+    .btn-lg{
+        @apply md:px-8 md:py-6 md:text-lg md:justify-center
+    }
+}
