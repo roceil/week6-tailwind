@@ -11,7 +11,7 @@
 }
 
 .banner {
-  background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/bg_home.jpg);
+  background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/bg_home_mobile.jpg);
   height: 90vh;
   background-position: center center;
   background-repeat: no-repeat;
@@ -28,8 +28,8 @@
   height: 3px;
   background-color: #62DB54;
   top: 100%;
-  left: 0%;
-  transform: translate(0%, 0%);
+  left: 50%;
+  transform: translate(-50%, -50%);
   margin-top: 16px;
 }
 
@@ -48,16 +48,18 @@
   margin-top: 16px;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .banner {
-    background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/bg_home_mobile.jpg);
-    height: 90vh;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/bg_home.jpg);
   }
   .home_teaching h2::after {
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 0%);
+  }
+}
+@media (min-width: 1024px) {
+  .home_teaching h2::after {
+    left: 0%;
+    transform: translate(0%, 0%);
   }
 }/*# sourceMappingURL=style.css.map */
