@@ -62,6 +62,18 @@
     .home_teaching{
         h2{
             &::after{
+                left: 50% ;
+                transform: translate(-50%,0%);
+            }
+        }
+    }
+}
+
+//1024解析度
+@media (min-width:1024px) {
+    .home_teaching{
+        h2{
+            &::after{
                 left: 0% ;
                 transform: translate(0%,0%);
             }
