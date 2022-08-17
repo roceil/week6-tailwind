@@ -1,8 +1,34 @@
 .nav{
-    a{
-        &::before{
-            content: '123';
-            border-bottom: 1px solid black;
+    li{
+        position: relative;
+        &:hover{
+            &::before{
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 5px;
+                top: 120%;
+                background: #62DB54;
+            }
         }
+
+    }
+}
+.banner{
+    background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/bg_home.jpg);
+    height: 90vh;
+    background-position: center center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+//768px解析度
+@media (max-width:768px) {
+    .banner{
+        background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/bg_home_mobile.jpg);
+        height: 90vh;
+        background-position: center center ;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
