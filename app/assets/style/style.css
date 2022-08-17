@@ -18,6 +18,21 @@
   background-size: cover;
 }
 
+.home_teaching h2 {
+  position: relative;
+}
+.home_teaching h2::after {
+  content: " ";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background-color: #62DB54;
+  top: 100%;
+  left: 0%;
+  transform: translate(0%, 0%);
+  margin-top: 16px;
+}
+
 @media (max-width: 768px) {
   .banner {
     background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/bg_home_mobile.jpg);
@@ -25,5 +40,9 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+  .home_teaching h2::after {
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }/*# sourceMappingURL=style.css.map */

@@ -13,6 +13,7 @@ module.exports = {
         'primary':'#2D2D2D',
         'secondary':'#62DB54',
         'light-primary':'#909090',
+        'heavy-primary':'#202020'
       }
     },
   },
