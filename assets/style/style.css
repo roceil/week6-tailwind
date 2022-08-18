@@ -34,10 +34,10 @@
   margin-top: 16px;
 }
 
-.process h2 {
+.h2_title h2 {
   position: relative;
 }
-.process h2::after {
+.h2_title h2::after {
   content: " ";
   position: absolute;
   width: 50px;
@@ -49,6 +49,143 @@
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   margin-top: 16px;
+}
+
+.suggestion_class {
+  position: relative;
+}
+.suggestion_class::after {
+  content: " ";
+  position: absolute;
+  background-color: #C1C1C1;
+  width: 100%;
+  height: 1px;
+  bottom: 69px;
+  left: 0;
+}
+
+.shadow_01 {
+  background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/info01.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -webkit-box-shadow: 0 16rem rgba(28, 28, 28, 0.9) inset;
+          box-shadow: 0 16rem rgba(28, 28, 28, 0.9) inset;
+  -webkit-transition: 0.8s;
+  -o-transition: 0.8s;
+  transition: 0.8s;
+}
+.shadow_01:hover {
+  -webkit-box-shadow: 0 16rem rgba(26, 26, 26, 0) inset;
+          box-shadow: 0 16rem rgba(26, 26, 26, 0) inset;
+}
+.shadow_01 h2 {
+  position: relative;
+}
+.shadow_01 h2:after {
+  content: " ";
+  position: absolute;
+  background-color: #62DB54;
+  width: 50px;
+  height: 3px;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 16px);
+      -ms-transform: translate(-50%, 16px);
+          transform: translate(-50%, 16px);
+}
+
+.shadow_02 {
+  background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/info02.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -webkit-box-shadow: 0 16rem rgba(28, 28, 28, 0.9) inset;
+          box-shadow: 0 16rem rgba(28, 28, 28, 0.9) inset;
+  -webkit-transition: 0.8s;
+  -o-transition: 0.8s;
+  transition: 0.8s;
+}
+.shadow_02:hover {
+  -webkit-box-shadow: 0 16rem rgba(26, 26, 26, 0) inset;
+          box-shadow: 0 16rem rgba(26, 26, 26, 0) inset;
+}
+.shadow_02 h2 {
+  position: relative;
+}
+.shadow_02 h2:after {
+  content: " ";
+  position: absolute;
+  background-color: #62DB54;
+  width: 50px;
+  height: 3px;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 16px);
+      -ms-transform: translate(-50%, 16px);
+          transform: translate(-50%, 16px);
+}
+
+.shadow_03 {
+  background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/info03.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -webkit-box-shadow: 0 16rem rgba(28, 28, 28, 0.9) inset;
+          box-shadow: 0 16rem rgba(28, 28, 28, 0.9) inset;
+  -webkit-transition: 0.8s;
+  -o-transition: 0.8s;
+  transition: 0.8s;
+}
+.shadow_03:hover {
+  -webkit-box-shadow: 0 16rem rgba(26, 26, 26, 0) inset;
+          box-shadow: 0 16rem rgba(26, 26, 26, 0) inset;
+}
+.shadow_03 h2 {
+  position: relative;
+}
+.shadow_03 h2:after {
+  content: " ";
+  position: absolute;
+  background-color: #62DB54;
+  width: 50px;
+  height: 3px;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 16px);
+      -ms-transform: translate(-50%, 16px);
+          transform: translate(-50%, 16px);
+}
+
+.shadow_04 {
+  background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/info04.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -webkit-box-shadow: 0 16rem rgba(28, 28, 28, 0.9) inset;
+          box-shadow: 0 16rem rgba(28, 28, 28, 0.9) inset;
+  -webkit-transition: 0.8s;
+  -o-transition: 0.8s;
+  transition: 0.8s;
+}
+.shadow_04:hover {
+  -webkit-box-shadow: 0 16rem rgba(26, 26, 26, 0) inset;
+          box-shadow: 0 16rem rgba(26, 26, 26, 0) inset;
+}
+.shadow_04 h2 {
+  position: relative;
+}
+.shadow_04 h2:after {
+  content: " ";
+  position: absolute;
+  background-color: #62DB54;
+  width: 50px;
+  height: 3px;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 16px);
+      -ms-transform: translate(-50%, 16px);
+          transform: translate(-50%, 16px);
 }
 
 @media (min-width: 768px) {
@@ -68,6 +205,32 @@
     -webkit-transform: translate(0%, 0%);
         -ms-transform: translate(0%, 0%);
             transform: translate(0%, 0%);
+  }
+  .shadow_01 {
+    -webkit-box-shadow: 0 615px rgba(28, 28, 28, 0.9) inset;
+            box-shadow: 0 615px rgba(28, 28, 28, 0.9) inset;
+  }
+  .shadow_02 {
+    -webkit-box-shadow: 0 615px rgba(28, 28, 28, 0.9) inset;
+            box-shadow: 0 615px rgba(28, 28, 28, 0.9) inset;
+  }
+  .shadow_03 {
+    -webkit-box-shadow: 0 615px rgba(28, 28, 28, 0.9) inset;
+            box-shadow: 0 615px rgba(28, 28, 28, 0.9) inset;
+  }
+  .shadow_04 {
+    -webkit-box-shadow: 0 615px rgba(28, 28, 28, 0.9) inset;
+            box-shadow: 0 615px rgba(28, 28, 28, 0.9) inset;
+  }
+}
+@media (min-width: 1280px) {
+  .shadow_01 h2:after, .shadow_02 h2:after, .shadow_03 h2:after, .shadow_04 h2:after {
+    background-color: #62DB54;
+    top: 100%;
+    left: 0;
+    -webkit-transform: translate(0, 16px);
+        -ms-transform: translate(0, 16px);
+            transform: translate(0, 16px);
   }
 }
 html,
