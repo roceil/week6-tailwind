@@ -736,9 +736,6 @@ select {
 .mb-\[50px\] {
   margin-bottom: 50px;
 }
-.mb-3 {
-  margin-bottom: 0.75rem;
-}
 .mr-\[6px\] {
   margin-right: 6px;
 }
@@ -819,9 +816,6 @@ select {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-.overflow-x-auto {
-  overflow-x: auto;
 }
 .rounded-xl {
   border-radius: 0.75rem;
