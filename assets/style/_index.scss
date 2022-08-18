@@ -64,6 +64,103 @@
         left: 0;
     }
 }
+.shadow_01{
+    background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/info01.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 16rem rgba(28, 28, 28, 0.9) inset;
+    transition: .8s;
+    &:hover{
+        box-shadow: 0 16rem rgba(26, 26, 26, 0) inset;
+    }
+    h2{
+        position: relative;
+        &:after{
+            content: ' ';
+            position: absolute;
+            background-color: #62DB54;
+            width: 50px;
+            height: 3px;
+            top: 100%;
+            left: 50%;
+            transform: translate(-50%,16px);
+        }
+    }
+}
+.shadow_02{
+    background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/info02.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 16rem rgba(28, 28, 28, 0.9) inset;
+    transition: .8s;
+    &:hover{
+        box-shadow: 0 16rem rgba(26, 26, 26, 0) inset;
+    }
+    h2{
+        position: relative;
+        &:after{
+            content: ' ';
+            position: absolute;
+            background-color: #62DB54;
+            width: 50px;
+            height: 3px;
+            top: 100%;
+            left: 50%;
+            transform: translate(-50%,16px);
+        }
+    }
+}
+.shadow_03{
+    background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/info03.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 16rem rgba(28, 28, 28, 0.9) inset;
+    transition: .8s;
+    &:hover{
+        box-shadow: 0 16rem rgba(26, 26, 26, 0) inset;
+    }
+    h2{
+        position: relative;
+        &:after{
+            content: ' ';
+            position: absolute;
+            background-color: #62DB54;
+            width: 50px;
+            height: 3px;
+            top: 100%;
+            left: 50%;
+            transform: translate(-50%,16px);
+        }
+    }
+}
+.shadow_04{
+    background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/info04.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 16rem rgba(28, 28, 28, 0.9) inset;
+    transition: .8s;
+    &:hover{
+        box-shadow: 0 16rem rgba(26, 26, 26, 0) inset;
+    }
+    h2{
+        position: relative;
+        &:after{
+            content: ' ';
+            position: absolute;
+            background-color: #62DB54;
+            width: 50px;
+            height: 3px;
+            top: 100%;
+            left: 50%;
+            transform: translate(-50%,16px);
+        }
+    }
+}
+
 
 //768px解析度
 @media (min-width:768px) {
@@ -90,4 +187,31 @@
             }
         }
     }
+    .shadow_01{
+        box-shadow: 0 615px rgba(28, 28, 28, 0.9) inset;
+    }
+    .shadow_02{
+        box-shadow: 0 615px rgba(28, 28, 28, 0.9) inset;
+    }
+    .shadow_03{
+        box-shadow: 0 615px rgba(28, 28, 28, 0.9) inset;
+    }
+    .shadow_04{
+        box-shadow: 0 615px rgba(28, 28, 28, 0.9) inset;
+    }
+}
+
+//1280解析度
+@media (min-width:1280px) {
+    .shadow_01,.shadow_02,.shadow_03,.shadow_04{
+        h2{
+            &:after{
+                background-color: #62DB54;
+                top: 100%;
+                left: 0;
+                transform: translate(0,16px);
+            }
+        }
+    }
+
 }
