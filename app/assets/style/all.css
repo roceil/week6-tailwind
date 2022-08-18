@@ -9,8 +9,9 @@ body{
     font-family: 'Noto Sans TC', 'sans-serif','Microsoft JhengHei';
 }
 .Azeret_Mono{
-    font-family: 'Azeret Mono', monospace;
+    font-family: Azeret Mono, monospace;
 }
+
 
 @layer components{
     .btn{
@@ -18,6 +19,11 @@ body{
     }
     .btn-lg{
         @apply md:px-8 md:py-6 md:text-lg md:justify-center
+    }
+    .btn-gradient{
+        background: linear-gradient(104deg,#09ACF5,#62DB54);
+        transition: all .5s;
+        @apply text-lg leading-normal px-8 py-2 w-auto border-0 mr-0 hover:ring-2 hover:ring-secondary
     }
 }
 
