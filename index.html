@@ -11,7 +11,8 @@
   rel="stylesheet">
   <link rel="stylesheet" href="./assets/style/all.css">
   <link rel="stylesheet" href="assets/style/style.css">
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
 </head>
 
 <body>
@@ -124,25 +125,91 @@
 <section class="process bg-primary py-10 ">
     <div class="">
         <h2 class="text-center text-white text-2xl leading-normal font-bold mb-10 px-[72px]">你想要學習的程式，都在這裡</h2>
-        <ul class="container flex overflow-x-auto mb-3">
-            <li class="btn btn-lg">JavaScript</li>
-            <li class="btn btn-lg">HTML/CSS</li>
-            <li class="btn btn-lg">SQL</li>
-            <li class="btn btn-lg">Java</li>
-            <li class="btn btn-lg">SQL</li>
-            <li class="btn btn-lg">Bash/Shell</li>
-            <li class="btn btn-lg">Python</li>
-            <li class="btn btn-lg">PHP</li>
-            <li class="btn btn-lg">C++</li>
-        </ul>
-    </section>
+        <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <button class="btn btn-lg">JavaScript</button>
+            </div> 
+            <div class="swiper-slide">
+                <button class="btn btn-lg">HTML/CSS</button>
+            </div> 
+            <div class="swiper-slide">
+                <button class="btn btn-lg">SQL</button>
+            </div>            
+            <div class="swiper-slide">
+                <button class="btn btn-lg">Java</button>
+            </div>             
+            <div class="swiper-slide">
+                <button class="btn btn-lg">SQL</button>
+            </div>             
+            <div class="swiper-slide">
+                <button class="btn btn-lg">Bash/Shell</button>
+            </div>             
+            <div class="swiper-slide">
+                <button class="btn btn-lg">Python</button>
+            </div>             
+            <div class="swiper-slide">
+                <button class="btn btn-lg">PHP</button>
+            </div>             
+            <div class="swiper-slide">
+                <button class="btn btn-lg">C++</button>
+            </div>             
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+
+    
+
 
 
   <footer class="bg-primary">
     <p class="container Azeret_Mono text-light-primary text-xs text-center py-4 leading-[14px] md:text-base md:leading-[19px]">Coding Home © 2022 All Rights Reserved</p>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/all.js"></script>
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 2,
+      spaceBetween: 20,
+      freeMode: true,
+      loop:true,
+      breakpoints: {
+    // when window width is >= 640px
+    375: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 3,
+      spaceBetween: 10
+    },
+    // when window width is >= 768px
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 10
+    },
+    // when window width is >= 1024px
+    1024: {
+      slidesPerView: 5,
+      spaceBetween: 10
+    },
+    // when window width is >= 1280px
+    1280: {
+      slidesPerView: 6,
+      spaceBetween: 10
+    },
+  },
+  autoplay: {
+    delay: 1500,
+  },
+    });
+  </script>
+  
 </body>
 
 </html>
