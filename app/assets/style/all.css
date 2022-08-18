@@ -23,7 +23,7 @@ body{
     .btn-gradient{
         background: linear-gradient(104deg,#09ACF5,#62DB54);
         transition: all .5s;
-        @apply text-lg leading-normal px-8 py-2 w-auto border-0 mr-0 hover:ring-2 hover:ring-secondary
+        @apply text-lg leading-normal px-8 py-2 w-auto border-0 mr-0 lg:hover:ring-2 lg:hover:ring-secondary
     }
 }
 
