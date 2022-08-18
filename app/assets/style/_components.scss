@@ -1,0 +1,60 @@
+
+    html,
+    body {
+      position: relative;
+    }
+    body {
+      background: #2D2D2D;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+
+    //swiper的container
+    .swiper {
+      max-width: 640px;
+      height: 100%;
+      padding-left: 12px;
+    }
+
+    //swiper內容物
+    .swiper-slide {
+      text-align: center;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+    @media (min-width:768px) {
+      .swiper {
+        max-width: 768px;
+        height: 100%;
+      }
+    }
+
+    @media (min-width:1024px) {
+      .swiper {
+        max-width: 1024px;
+        height: 100%;
+      }
+    }
+
+    @media (min-width:1280px) {
+      .swiper {
+        max-width: 1280px;
+        height: 100%;
+      }
+    }

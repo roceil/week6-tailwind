@@ -11,7 +11,8 @@
   rel="stylesheet">
   <link rel="stylesheet" href="./assets/style/all.css">
   <link rel="stylesheet" href="assets/style/style.css">
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
 </head>
 
 <body>
@@ -37,8 +38,49 @@
   <footer class="bg-primary">
     <p class="container Azeret_Mono text-light-primary text-xs text-center py-4 leading-[14px] md:text-base md:leading-[19px]">Coding Home © 2022 All Rights Reserved</p>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/all.js"></script>
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 2,
+      spaceBetween: 20,
+      freeMode: true,
+      loop:true,
+      breakpoints: {
+    // when window width is >= 640px
+    375: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 3,
+      spaceBetween: 10
+    },
+    // when window width is >= 768px
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 10
+    },
+    // when window width is >= 1024px
+    1024: {
+      slidesPerView: 5,
+      spaceBetween: 10
+    },
+    // when window width is >= 1280px
+    1280: {
+      slidesPerView: 6,
+      spaceBetween: 10
+    },
+  },
+  autoplay: {
+    delay: 1500,
+  },
+    });
+  </script>
+  
 </body>
 
 </html>

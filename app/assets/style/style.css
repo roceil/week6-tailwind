@@ -61,4 +61,50 @@
     left: 0%;
     transform: translate(0%, 0%);
   }
+}
+html,
+body {
+  position: relative;
+}
+
+body {
+  background: #2D2D2D;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.swiper {
+  max-width: 640px;
+  height: 100%;
+  padding-left: 12px;
+}
+
+.swiper-slide {
+  text-align: center;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .swiper {
+    max-width: 768px;
+    height: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  .swiper {
+    max-width: 1024px;
+    height: 100%;
+  }
+}
+@media (min-width: 1280px) {
+  .swiper {
+    max-width: 1280px;
+    height: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
