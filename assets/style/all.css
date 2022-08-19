@@ -794,6 +794,9 @@ select {
 .mb-1 {
   margin-bottom: 0.25rem;
 }
+.mb-0 {
+  margin-bottom: 0px;
+}
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1108,9 +1111,11 @@ select {
     font-family: Azeret Mono, monospace;
 }
 
+
 .group:hover .group-hover\:opacity-100 {
   opacity: 1;
 }
+
 
 @media (min-width: 640px) {
 
@@ -1141,6 +1146,7 @@ select {
             align-items: center;
   }
 }
+
 
 @media (min-width: 768px) {
 
@@ -1193,6 +1199,7 @@ select {
     line-height: 19px;
   }
 }
+
 
 @media (min-width: 1024px) {
 
@@ -1431,6 +1438,7 @@ select {
     --tw-ring-color: rgb(98 219 84 / var(--tw-ring-opacity));
   }
 }
+
 
 @media (min-width: 1280px) {
 
