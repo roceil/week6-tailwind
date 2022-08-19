@@ -1,0 +1,150 @@
+---
+title: 課程介紹
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+<!-- 此頁背景色設定 -->
+<style>
+    body{
+        background-color: #1C1C1C;
+    }
+</style>
+
+<!-- 上方課程分類按鈕 -->
+<section class="mt-10 mb-10">
+    <div class="container">
+        <ul class="flex overflow-x-auto">
+            <li class="pb-2"><a href="#" class="btn btn-class border-secondary text-secondary">所有課程</a></li>
+            <li class="pb-2"><a href="#" class="btn btn-class transition duration-500 lg:hover:border-secondary lg:hover:text-secondary">行動應用開發</a></li>
+            <li class="pb-2"><a href="#" class="btn btn-class transition duration-500 lg:hover:border-secondary lg:hover:text-secondary">資料庫/資料科學</a></li>
+            <li class="pb-2"><a href="#" class="btn btn-class transition duration-500 lg:hover:border-secondary lg:hover:text-secondary">前端語言</a></li>
+            <li class="pb-2"><a href="#" class="btn btn-class transition duration-500 lg:hover:border-secondary lg:hover:text-secondary">後端語言</a></li>
+            <li class="pb-2"><a href="#" class="btn btn-class transition duration-500 lg:hover:border-secondary lg:hover:text-secondary">作業系統與伺服器</a></li>
+        </ul>
+    </div>
+</section>
+
+<!-- 課程內容 -->
+<section>
+    <div class="container">
+        <ul class="pb-10 flex flex-col items-center lg:flex-row lg:flex-wrap">
+            <!-- 01 -->
+            <li class="mb-6 sm:w-2/3 lg:w-full lg:mb-8 ">
+                <div class="bg-primary rounded-3xl py-8 px-6 text-white lg:flex lg:items-center">
+                    <!-- 老師頭像 -->
+                    <div class="flex flex-col items-center mb-6 lg:ml-12  lg:mb-0">
+                        <img class="w-[100px] rounded-full mb-2 lg:mr-12" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/teacher01.jpg" alt="Belinda">
+                        <p class="text-base leading-normal lg:mr-12">Belinda</p>
+                    </div>
+
+                    <!-- 課程介紹 -->
+                    <div class="lg:mr-[88px]">
+                        <h2 class="text-xl leading-normal font-bold mb-1">基礎前端 - HTML</h2>
+                        <p class="text-secondary text-base leading-normal mb-2">前端語言</p>
+                        <p class="text-base leading-normal mb-12 lg:mb-0">帶領無基礎的平民老百姓，從最基礎的 HTML 語法出發，使用最淺顯易懂的語言與生活隨處可見的例子，輕鬆進入網頁架設的世界，完成一個基礎的網頁架設。</p>
+                    </div>
+
+                    <!-- 價格＆按鈕 -->
+                    <div class="">
+                        <div class="flex justify-center items-baseline mb-4 lg:flex-col lg:items-center">
+                            <p class="text-base mr-2">50分鐘</p>
+                            <p class="Azeret_Mono text-[32px]">NT$1600</p>
+                        </div>
+                        <div class="flex justify-center lg:flex-col lg:items-center">
+                            <input class="btn w-[140px]  py-2 text-lg mr-2 ease-in duration-300  lg:hover:bg-white lg:hover:text-heavy-primary lg:w-[168px] lg:mr-0 lg:mb-2" type="button" value="課程介紹">
+                            <input class="btn w-[140px] btn-gradient py-2 text-lg lg:w-[168px]" type="button" value="立即預約">
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <!-- 02 -->
+            <li class="mb-6 sm:w-2/3 lg:w-full lg:mb-8 ">
+                <div class="bg-primary rounded-3xl py-8 px-6 text-white lg:flex lg:items-center">
+                    <!-- 老師頭像 -->
+                    <div class="flex flex-col items-center mb-6 lg:ml-12  lg:mb-0">
+                        <img class="w-[100px] rounded-full mb-2 lg:mr-12" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/teacher01.jpg" alt="Belinda">
+                        <p class="text-base leading-normal lg:mr-12">Belinda</p>
+                    </div>
+
+                    <!-- 課程介紹 -->
+                    <div class="lg:mr-[88px]">
+                        <h2 class="text-xl leading-normal font-bold mb-1">基礎前端 - HTML</h2>
+                        <p class="text-secondary text-base leading-normal mb-2">前端語言</p>
+                        <p class="text-base leading-normal mb-12 lg:mb-0">帶領無基礎的平民老百姓，從最基礎的 HTML 語法出發，使用最淺顯易懂的語言與生活隨處可見的例子，輕鬆進入網頁架設的世界，完成一個基礎的網頁架設。</p>
+                    </div>
+
+                    <!-- 價格＆按鈕 -->
+                    <div class="">
+                        <div class="flex justify-center items-baseline mb-4 lg:flex-col lg:items-center">
+                            <p class="text-base mr-2">50分鐘</p>
+                            <p class="Azeret_Mono text-[32px]">NT$1600</p>
+                        </div>
+                        <div class="flex justify-center lg:flex-col lg:items-center">
+                            <input class="btn w-[140px]  py-2 text-lg mr-2 ease-in duration-300  lg:hover:bg-white lg:hover:text-heavy-primary lg:w-[168px] lg:mr-0 lg:mb-2" type="button" value="課程介紹">
+                            <input class="btn w-[140px] btn-gradient py-2 text-lg lg:w-[168px]" type="button" value="立即預約">
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <!-- 03 -->
+            <li class="mb-6 sm:w-2/3 lg:w-full lg:mb-8 ">
+                <div class="bg-primary rounded-3xl py-8 px-6 text-white lg:flex lg:items-center">
+                    <!-- 老師頭像 -->
+                    <div class="flex flex-col items-center mb-6 lg:ml-12  lg:mb-0">
+                        <img class="w-[100px] rounded-full mb-2 lg:mr-12" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/teacher01.jpg" alt="Belinda">
+                        <p class="text-base leading-normal lg:mr-12">Belinda</p>
+                    </div>
+
+                    <!-- 課程介紹 -->
+                    <div class="lg:mr-[88px]">
+                        <h2 class="text-xl leading-normal font-bold mb-1">基礎前端 - HTML</h2>
+                        <p class="text-secondary text-base leading-normal mb-2">前端語言</p>
+                        <p class="text-base leading-normal mb-12 lg:mb-0">帶領無基礎的平民老百姓，從最基礎的 HTML 語法出發，使用最淺顯易懂的語言與生活隨處可見的例子，輕鬆進入網頁架設的世界，完成一個基礎的網頁架設。</p>
+                    </div>
+
+                    <!-- 價格＆按鈕 -->
+                    <div class="">
+                        <div class="flex justify-center items-baseline mb-4 lg:flex-col lg:items-center">
+                            <p class="text-base mr-2">50分鐘</p>
+                            <p class="Azeret_Mono text-[32px]">NT$1600</p>
+                        </div>
+                        <div class="flex justify-center lg:flex-col lg:items-center">
+                            <input class="btn w-[140px]  py-2 text-lg mr-2 ease-in duration-300  lg:hover:bg-white lg:hover:text-heavy-primary lg:w-[168px] lg:mr-0 lg:mb-2" type="button" value="課程介紹">
+                            <input class="btn w-[140px] btn-gradient py-2 text-lg lg:w-[168px]" type="button" value="立即預約">
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <!-- 04 -->
+            <li class="mb-6 sm:w-2/3 lg:w-full lg:mb-8 ">
+                <div class="bg-primary rounded-3xl py-8 px-6 text-white lg:flex lg:items-center">
+                    <!-- 老師頭像 -->
+                    <div class="flex flex-col items-center mb-6 lg:ml-12  lg:mb-0">
+                        <img class="w-[100px] rounded-full mb-2 lg:mr-12" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/teacher01.jpg" alt="Belinda">
+                        <p class="text-base leading-normal lg:mr-12">Belinda</p>
+                    </div>
+
+                    <!-- 課程介紹 -->
+                    <div class="lg:mr-[88px]">
+                        <h2 class="text-xl leading-normal font-bold mb-1">基礎前端 - HTML</h2>
+                        <p class="text-secondary text-base leading-normal mb-2">前端語言</p>
+                        <p class="text-base leading-normal mb-12 lg:mb-0">帶領無基礎的平民老百姓，從最基礎的 HTML 語法出發，使用最淺顯易懂的語言與生活隨處可見的例子，輕鬆進入網頁架設的世界，完成一個基礎的網頁架設。</p>
+                    </div>
+
+                    <!-- 價格＆按鈕 -->
+                    <div class="">
+                        <div class="flex justify-center items-baseline mb-4 lg:flex-col lg:items-center">
+                            <p class="text-base mr-2">50分鐘</p>
+                            <p class="Azeret_Mono text-[32px]">NT$1600</p>
+                        </div>
+                        <div class="flex justify-center lg:flex-col lg:items-center">
+                            <input class="btn w-[140px]  py-2 text-lg mr-2 ease-in duration-300  lg:hover:bg-white lg:hover:text-heavy-primary lg:w-[168px] lg:mr-0 lg:mb-2" type="button" value="課程介紹">
+                            <input class="btn w-[140px] btn-gradient py-2 text-lg lg:w-[168px]" type="button" value="立即預約">
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
