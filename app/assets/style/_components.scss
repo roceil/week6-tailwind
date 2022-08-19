@@ -12,14 +12,14 @@
     }
 
     //swiper的container
-    .swiper {
+    .module1 .swiper {
       max-width: 640px;
       height: 100%;
       padding-left: 12px;
     }
 
     //swiper內容物
-    .swiper-slide {
+    .module1 .swiper-slide {
       text-align: center;
 
       /* Center slide text vertically */
@@ -38,23 +38,72 @@
     }
 
     @media (min-width:768px) {
-      .swiper {
+      .module1 .swiper {
         max-width: 768px;
         height: 100%;
       }
     }
 
     @media (min-width:1024px) {
-      .swiper {
+      .module1 .swiper {
         max-width: 1024px;
         height: 100%;
       }
     }
 
     @media (min-width:1280px) {
-      .swiper {
+      .module1 .swiper {
         max-width: 1280px;
         height: 100%;
+      }
+    }
+
+
+    //swiper_superpower
+    .module2 .swiper {
+      width: 100%;
+      height: auto;
+    }
+    .module2 .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      color: white;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+    .module2.swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .module2 .swiper-pagination-bullet {
+      background-color: #62DB54;
+      opacity: 1;
+    }
+    .module2 .swiper-pagination-bullet-active{
+      width: 16px;
+      border-radius: 100px;
+    }
+    .module2 .swiper-button-next:after,.module2 .swiper-button-prev:after {
+      content: '';
+    }
+    .module2 .swiper-pagination-bullets.swiper-pagination-horizontal {
+      @media (min-width:1280px) {
+        bottom: 62px;
+        left: -130px;
       }
     }
 
