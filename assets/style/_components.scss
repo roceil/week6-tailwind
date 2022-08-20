@@ -59,17 +59,15 @@
     }
 
 
-    //swiper2
+    //swiper_superpower
     .module2 .swiper {
       width: 100%;
       height: auto;
     }
-
     .module2 .swiper-slide {
       text-align: center;
       font-size: 18px;
       color: white;
-      background: #000000;
 
       /* Center slide text vertically */
       display: -webkit-box;
@@ -85,7 +83,6 @@
       -webkit-align-items: center;
       align-items: center;
     }
-
     .module2.swiper-slide img {
       display: block;
       width: 100%;
@@ -100,8 +97,13 @@
       width: 16px;
       border-radius: 100px;
     }
-
     .module2 .swiper-button-next:after,.module2 .swiper-button-prev:after {
       content: '';
+    }
+    .module2 .swiper-pagination-bullets.swiper-pagination-horizontal {
+      @media (min-width:1280px) {
+        bottom: 62px;
+        left: -130px;
+      }
     }
 
