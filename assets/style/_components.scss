@@ -11,6 +11,52 @@
       padding: 0;
     }
 
+    // 手機版header_nav---start
+    .hamburger-container{
+      display: block;
+      width: 24px;
+      height: auto;
+      cursor: pointer;
+      span{
+        display: block;
+        height: 2px;
+        background-color:#62DB54 ;
+        position: relative;
+        transition:transform .3s ease-in-out, top .3s ease-in-out .3s ;
+        top: 0;
+        &:nth-child(2){
+          margin-top: 7px;
+        }
+      }
+    }
+    .toggle:checked + label .hamburger-container span:nth-child(1){
+      transform: rotate(45deg);
+      top: 4px;
+      transition: top .3s ease-in-out, transform .3s ease-in-out .3s;
+    }
+    .toggle:checked + label .hamburger-container span:nth-child(2){
+      transform: rotate(-45deg);
+      top: -5px;
+      transition: top .3s ease-in-out, transform .3s ease-in-out .3s;
+    }
+    .toggle:checked ~ .nav_sm{
+      transform: scaleY(1);
+      opacity: 1 !important;
+    }
+    .nav_sm{
+      background-color: #2D2D2D;
+      width: 100%;
+      position: absolute;
+      top: 72px;
+      left: 0;
+      margin-top: 0;
+      transform: scaleY(0);
+      transform-origin: 50% 0;
+      transition: .5s;
+      opacity: 0;
+    }
+    //手機版header_nav---end
+
     //swiper的container
     .module1 .swiper {
       max-width: 640px;
@@ -106,4 +152,5 @@
         left: -130px;
       }
     }
+
 
