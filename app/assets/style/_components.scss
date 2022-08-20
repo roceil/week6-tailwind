@@ -11,7 +11,7 @@
       padding: 0;
     }
 
-    // 手機版header nav start
+    // 手機版header_nav---start
     .hamburger-container{
       display: block;
       width: 24px;
@@ -43,7 +43,6 @@
       transform: scaleY(1);
       opacity: 1 !important;
     }
-
     .nav_sm{
       background-color: #2D2D2D;
       width: 100%;
@@ -56,6 +55,7 @@
       transition: .5s;
       opacity: 0;
     }
+    //手機版header_nav---end
 
     //swiper的container
     .module1 .swiper {
