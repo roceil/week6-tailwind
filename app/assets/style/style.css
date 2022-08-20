@@ -223,6 +223,54 @@ body {
   padding: 0;
 }
 
+.hamburger-container {
+  display: block;
+  width: 24px;
+  height: auto;
+  cursor: pointer;
+}
+.hamburger-container span {
+  display: block;
+  height: 2px;
+  background-color: #62DB54;
+  position: relative;
+  transition: transform 0.3s ease-in-out, top 0.3s ease-in-out 0.3s;
+  top: 0;
+}
+.hamburger-container span:nth-child(2) {
+  margin-top: 7px;
+}
+
+.toggle:checked + label .hamburger-container span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 4px;
+  transition: top 0.3s ease-in-out, transform 0.3s ease-in-out 0.3s;
+}
+
+.toggle:checked + label .hamburger-container span:nth-child(2) {
+  transform: rotate(-45deg);
+  top: -5px;
+  transition: top 0.3s ease-in-out, transform 0.3s ease-in-out 0.3s;
+}
+
+.toggle:checked ~ .nav_sm {
+  transform: scaleY(1);
+  opacity: 1 !important;
+}
+
+.nav_sm {
+  background-color: #2D2D2D;
+  width: 100%;
+  position: absolute;
+  top: 72px;
+  left: 0;
+  margin-top: 0;
+  transform: scaleY(0);
+  transform-origin: 50% 0;
+  transition: 0.5s;
+  opacity: 0;
+}
+
 .module1 .swiper {
   max-width: 640px;
   height: 100%;

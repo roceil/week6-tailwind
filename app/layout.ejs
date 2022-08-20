@@ -30,12 +30,28 @@
 </head>
 
 <body>
-  <header class="bg-primary fixed w-full top-0 z-50">
+  <header class="bg-primary fixed w-full top-0 z-10">
     <!-- 手機版 -->
-    <div class="container  md:hidden py-6 flex justify-between items-center ">
-      <a href="index.html"><img class="w-6" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/logo2.svg" alt="logo"></a>
-      <input class="leading-4 text-2xl text-secondary cursor-pointer" type="button" value="=">
+    <div class="container py-6 flex justify-between items-center md:hidden">
+      <a href="index.html"><img class="w-6" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/logo2.svg" alt="logo-SM"></a>
+      <input class="toggle hidden" type="checkbox" name="toggle" id="toggle">
+      <label for="toggle" class="block">
+        <div class="hamburger-container">
+          <span></span>
+          <span></span>
+        </div>
+      </label>
+
+      <!-- 選單 -->
+      <ul class="nav_sm">
+        <li><a class="block text-lg leading-normal text-center text-white py-3"  href="index.html">首頁</a></li>
+        <li><a class="block text-lg leading-normal text-center text-white py-3"  href="lessio.html">課程介紹</a></li>
+        <li><a class="flex text-lg leading-normal items-center justify-center  text-white py-3"  href="#"><span class="material-icons mr-[6px]">account_circle</span>登入</a></li>
+      </ul>
     </div>
+
+
+
     <!-- 平版、電腦版 -->
     <div class="container hidden md:flex md:items-center md:justify-between py-6">
       <a href="index.html"><img class="w-44" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/logo.svg" alt="logo"></a>
