@@ -8,10 +8,6 @@
     }
 }
 
-.Azeret_Mono{
-    font-family: Azeret Mono, monospace;
-}
-
 
 @layer components{
     .btn{
@@ -27,6 +23,12 @@
     }
     .btn-class{
         @apply px-0 py-4 text-center
+    }
+}
+
+@layer utilities{
+    .Azeret_Mono{
+        font-family: Azeret Mono, monospace;
     }
 }
 
